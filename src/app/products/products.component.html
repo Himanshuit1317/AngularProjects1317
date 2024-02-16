@@ -1,0 +1,12 @@
+<button (click)="get_products()">GET /products</button>
+<ul>
+    @for(product of products;track product.id){
+    <li  >
+      -- id: {{product.id}}
+      -- name: {{product.name}}
+      -- cost: {{product.cost}}
+      -- quantity: {{product.quantity}}
+    </li>
+}
+  </ul> 
+
